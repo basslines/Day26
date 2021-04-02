@@ -6,7 +6,7 @@ class PostRequestErrorHandling extends React.Component {
     super(props);
     this.state = { articleId: null, errorMessage: null };
   }
-  async componentDidMount() {
+  componentDidMount() {
     const article = { title: "React POST Request Example" };
     axios
       .post("https://reqres.in/invalid-url", article)
